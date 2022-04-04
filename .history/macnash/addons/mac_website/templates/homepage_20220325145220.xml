@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Update default website -->
+    <!-- <record id="website.default_website" model="website">
+        <field name="name">Macnash</field>
+        <field name="logo" type="base64" file="mac_website/static/src/img/logo.png"/>
+        <field name="favicon" type="base64" file="mac_website/static/src/img/favicon.png"/>
+    </record> -->
+
+    template <
+    <template id="website_home_page_macnash" name="Accueil">
+        <t t-call="website.layout">
+    
+            <!-- <t t-foreach="selection" t-as="item">
+                <p><t t-esc="item['name']"/></p>
+                <p><t t-esc="item['price']"/></p>
+            </t> -->
+            <section id="section-selection">
+                <div class="container">
+                    <h2 class="text-center title-main">Our Selection</h2>
+                    <div class="row">
+                    <t t-foreach="selection" t-as="item">
+                        <div class="col-3">
+                            <div class="card border-0" style="width: 260px;">
+                                <img src="/mac_website/static/src/img/house_1.jpeg" class="card-img-top" alt="house_1" />
+                                <div class="card-body">
+                                    <p class="card-type mb-1"><t t-esc="item['type']"/></p>
+                                    <h5 class="card-title mb-1"><t t-esc="item['name']"/></h5>
+                                    <p class="card-price"><t t-esc="item['price']"/> €</p>
+                                    <hr />
+                                    <a href="#" class="btn btn-card w-100">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="section-maps">
+            </section> -->
+            <section id="section-services">
+                <h2 class="text-center title-main">Our Services</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="/mac_website/static/src/img/service_1.jpeg" class="card-img-top" alt="service_1" />
+                                <div class="card-body">
+                                    <h3 class="card-type mb-1">Selling or Buying</h3>
+                                    <div class="content">
+                                        <p class="card-price">SELL your property with Macnash – we have 17 years of experience in the sector!
+                                            A realistic price valuation, a team of professionals trained in new legislation, and we will guide you from the signing of the preliminary sales agreement to the purchase deed. <br/>
+                                            BUY a property with Macnash.
+                                            View our range of residential, investment, office and business properties. With our contacts, we can help you to achieve your plans and will provide the keys to your satisfact</p>
+                                        <a href="#" class="btn btn-card w-100">Read more</a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

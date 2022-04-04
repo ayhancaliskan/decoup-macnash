@@ -1,0 +1,12 @@
+#carouselSlides{
+    .carousel-item{
+        position: relative;
+        img{
+        }
+        .text-banner {
+            position: absolute;
+            bottom: 0;left: 0;
+            color: #FFFFFF;
+        }
+    }
+}

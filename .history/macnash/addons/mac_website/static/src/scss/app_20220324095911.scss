@@ -1,0 +1,9 @@
+#carouselSlides{
+    .carousel-item{
+        position: relative;
+        .text-banner {
+            position: absolute;
+            top: 0;left: 0;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Update default website -->
+    <record id="website.default_website" model="website">
+        <field name="name">Macnash</field>
+        <field name="logo" type="base64" file="mac_website/static/src/img/logo.png"/>
+        <field name="favicon" type="base64" file="mac_website/static/src/img/favicon.png"/>
+    </record>
+
+
+    <template id="website_home_page_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <div> Hello TEST </div>
+        </t>
+    </template>
+</odoo>

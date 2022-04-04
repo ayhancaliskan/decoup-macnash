@@ -1,0 +1,30 @@
+<odoo>
+    <template id="free_valuation_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <!-- <t t-call="mac_website.section-banner"/> -->
+            <div class="container">
+                <h1>How much id your property worth</h1>
+                <div class="content">
+                    <div class="row">
+                        <p class="mb-O"><strong>Would you like a Sale or Rental valuation of your property?</strong></p>
+                        <p>One of our representatives will value your property free-of-charge, taking into account the following criteria :</p>
+                        <ul>
+                            <li>The location and surroundings</li>
+                            <li>Precise measurements to determine the exact floor area</li>
+                            <li>Quality of materials used and finish</li>
+                            <li>Comparison with sales completed in the area</li>
+                            <li>A study of the financial data (profitability, feasibility, charges etc.)</li>
+                            <li>Please contact us using the form below, and we’ll reply within 24 hours.</li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

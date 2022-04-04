@@ -1,0 +1,9 @@
+<odoo>
+    <template id="free_valuation_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <!-- <t t-call="mac_website.section-banner"/> -->
+            <h1>How much id your property wort</h1>
+        </t>
+    </template>
+
+</odoo>

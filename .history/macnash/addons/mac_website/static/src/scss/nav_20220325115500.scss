@@ -1,0 +1,23 @@
+nav{
+    background-color: #424554;
+    li > a{
+        color: #fff;
+        font-size: 18px;
+        text-transform:uppercase;
+    }
+    .btn-group{
+        button{
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            text-transform:uppercase;
+        }
+        button:focus {outline:0;}
+        button:active {color: #}
+        a{
+            font-size: 14px;
+        }
+
+    }
+}

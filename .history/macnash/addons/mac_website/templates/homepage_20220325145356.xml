@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Update default website -->
+    <!-- <record id="website.default_website" model="website">
+        <field name="name">Macnash</field>
+        <field name="logo" type="base64" file="mac_website/static/src/img/logo.png"/>
+        <field name="favicon" type="base64" file="mac_website/static/src/img/favicon.png"/>
+    </record> -->
+
+    <template id="website_banner_macnash" name="Banner">
+        <section id="section-banner">
+            <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/mac_website/static/src/img/banner_1.jpeg" class="d-block w-100" alt="banner_salon" />
+                        <div class="text-bg"></div>
+                        <div class="text-banner py-3">
+                            <h1>Montgomery, the gateway to the European Quarter!</h1>
+                            <div>
+                                <p>Montgomery, Cinquantenaire, Schuman and Mérode. A great quality of life within a stone's throw of the business quarter. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/mac_website/static/src/img/banner_2.jpeg" class="d-block w-100" alt="banner_place" />
+                        <div class="text-bg"></div>
+                        <div class="text-banner py-3">
+                            <h1>Is Brussels still a buyer's market?</h1>
+                            <div>
+                                <p>The Brussels property market is still full of opportunities. View our tips for a successful purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/mac_website/static/src/img/banner_3.jpeg" class="d-block w-100" alt="banner_maison" />
+                        <div class="text-bg"></div>
+                        <div class="text-banner py-3">
+                            <h1>Experience the good life in Rhode-Saint-Genèse</h1>
+                            <div>
+                                <p>This green, residential and tranquil area offers a range of prestigious villas and beautiful houses. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/mac_website/static/src/img/banner_4.jpeg" class="d-block w-100" alt="banner_piscine" />
+                        <div class="text-bg"></div>
+                        <div class="text-banner py-3">
+                            <h1>Make your garden an integral part of your home</h1>
+                            <div>
+                                <p>Over the past few years, garden landscaping has become all the rage and homeowners are spending more on their outdoor space.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="form-search" action="">
+                <div class="form-group d-flex justify-content-center w-100">
+                    <div class="form-check form-check-inline w-50">
+                        <input class="form-check-input" type="radio" id="inlineRadio1" value="Sale" />
+                        <label class="form-check-label ml-2" for="inlineRadio1">Sale</label>
+                    </div>
+                    <div class="form-check form-check-inline w-50">
+                        <input class="form-check-input" type="radio" id="inlineRadio2" value="Rent" />
+                        <label class="form-check-label ml-2" for="inlineRadio2">Rent</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select id="inputState" class="form-control">
+                        <option>Flat</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group mb-1">
+                    <label for="formControlRange">
+                        <i class="fa fa-tag"></i>
+                        Until
+                        <span class="font-weight-bold">250.000 €</span>
+                    </label>
+                    <input type="range" min="0" max="13" class="form-control-range" id="formControlRange" />
+                </div>
+                <div class="form-group mb-1">
+                    <label for="formControlRange">
+                        <i class="fa fa-bed"></i>
+                        Minimum
+                        <span class="font-weight-bold">2 rooms</span>
+                    </label>
+                    <input type="range" min="0" max="5" class="form-control-range w-100" id="formControlRange" />
+                </div>
+                <div class="form-group">
+                    <label for="localisation">
+                        <i class="fa fa-map-marker"></i>
+                        Location
+                    </label>
+                    <input type="text" class="form-control" id="localisation" placeholder="City, zip code" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" href="javascript:__doPostBack('ctl00$contentHolder$boxSearch$ctl10','')">
+                        Search
+                        <i class="fa fa-search fa-right"></i>
+                    </button>
+                </div>
+                <div class="form-group mb-1">
+                    <p>
+                        <a class="more-link" href="">More criterias ?</a>
+                    </p>
+                    <p class="m-0">
+                        <a class="more-link" href="">Our offers by e-mail</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </template>
+
+
+    <template id="website_home_page_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <t t-call="mac_Website.layout"/>
+            <!-- <t t-foreach="selection" t-as="item">
+                <p><t t-esc="item['name']"/></p>
+                <p><t t-esc="item['price']"/></p>
+            </t> -->
+            <section id="section-selection">
+                <div class="container">
+                    <h2 class="text-center title-main">Our Selection</h2>
+                    <div class="row">
+                    <t t-foreach="selection" t-as="item">
+                        <div class="col-3">
+                            <div class="card border-0" style="width: 260px;">
+                                <img src="/mac_website/static/src/img/house_1.jpeg" class="card-img-top" alt="house_1" />
+                                <div class="card-body">
+                                    <p class="card-type mb-1"><t t-esc="item['type']"/></p>
+                                    <h5 class="card-title mb-1"><t t-esc="item['name']"/></h5>
+                                    <p class="card-price"><t t-esc="item['price']"/> €</p>
+                                    <hr />
+                                    <a href="#" class="btn btn-card w-100">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="section-maps">
+            </section> -->
+            <section id="section-services">
+                <h2 class="text-center title-main">Our Services</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="/mac_website/static/src/img/service_1.jpeg" class="card-img-top" alt="service_1" />
+                                <div class="card-body">
+                                    <h3 class="card-type mb-1">Selling or Buying</h3>
+                                    <div class="content">
+                                        <p class="card-price">SELL your property with Macnash – we have 17 years of experience in the sector!
+                                            A realistic price valuation, a team of professionals trained in new legislation, and we will guide you from the signing of the preliminary sales agreement to the purchase deed. <br/>
+                                            BUY a property with Macnash.
+                                            View our range of residential, investment, office and business properties. With our contacts, we can help you to achieve your plans and will provide the keys to your satisfact</p>
+                                        <a href="#" class="btn btn-card w-100">Read more</a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

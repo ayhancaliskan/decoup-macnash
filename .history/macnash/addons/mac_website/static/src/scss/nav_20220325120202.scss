@@ -1,0 +1,30 @@
+nav{
+    background-color: #424554;
+    li > a{
+        color: #fff;
+        font-size: 16px;
+        text-transform:uppercase;
+        transition: .3s;
+    }
+    a:hover{
+        color: #3ea832;
+        text-decoration: none;
+    }
+    .btn-group{
+        button{
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            text-transform:uppercase;
+            transition: .3s;
+        }
+        button:hover {color: #3ea832}
+        button:focus {outline:0;}
+        button:active {color: #3ea832}
+        a{
+            font-size: 14px;
+        }
+
+    }
+}

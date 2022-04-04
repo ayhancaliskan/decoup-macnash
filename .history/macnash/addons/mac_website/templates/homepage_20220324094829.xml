@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Update default website -->
+    <!-- <record id="website.default_website" model="website">
+        <field name="name">Macnash</field>
+        <field name="logo" type="base64" file="mac_website/static/src/img/logo.png"/>
+        <field name="favicon" type="base64" file="mac_website/static/src/img/favicon.png"/>
+    </record> -->
+    <!--
+    <template id="template_footer_macnash" inherit_id="website.layout" name="Headline" active="False">
+        <xpath expr="//header[@id='top']" position="replace">
+            <div>test</div>
+        </xpath>
+    </template> -->
+
+    <template id="website_home_page_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <section id="section-banner">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/mac_website/static/src/img/banner_1.jpeg" class="d-block w-100" alt="banner_salon"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/mac_website/static/src/img/banner_2.jpeg" class="d-block w-100" alt="banner_place"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/mac_website/static/src/img/banner_3.jpeg" class="d-block w-100" alt="banner_maison"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/mac_website/static/src/img/banner_4.jpeg" class="d-block w-100" alt="banner_piscine"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

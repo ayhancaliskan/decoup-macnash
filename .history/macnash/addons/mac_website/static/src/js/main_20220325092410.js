@@ -1,0 +1,3 @@
+odoo.define('', function (require) {
+
+});

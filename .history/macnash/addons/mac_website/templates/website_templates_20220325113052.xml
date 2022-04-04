@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!-- header website template -->
+    <template id="macnash_template_header" inherit_id="website.layout" name="Macnsash header">
+        <xpath expr="//header[@id='top']" position="replace">
+            <header id="top" data-anchor="true" data-name="Header" class="  o_header_standard">
+                <nav data-name="Navbar" class="navbar navbar-expand-lg">
+                    <div id="top_menu_container" class="container justify-content-start justify-content-lg-between">
+                        <a href="/" class="navbar-brand logo mr-4">
+                            <span role="img" aria-label="Logo of My Website" title="My Website">
+                                <img src="/mac_website/static/src/img/logo.png" class="img img-fluid" alt="My Website" loading="lazy"/>
+                            </span>
+                        </a>
+                        <button type="button" data-toggle="collapse" data-target="#top_menu_collapse" class="navbar-toggler ml-auto">
+                            <span class="navbar-toggler-icon o_not_editable"></span>
+                        </button>
+                
+                            <div>
+                                <ul id="top_menu" class="nav navbar-nav flex-grow-1">
+                                    <li class="nav-item">
+                                        <a role="menuitem" href="/" class="nav-link ">
+                                            <span>free valuation</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                              free agency
+                                            </button>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Macnash SUD</a>
+                                              <a class="dropdown-item" href="#">Macnash BRABANT</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a role="menuitem" href="/" class="nav-link ">
+                                            <span>new project</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a role="menuitem" href="/contactus" class="nav-link ">
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ml-lg-auto o_no_autohide_item">
+                                        <a href="/web/login" class="nav-link font-weight-bold">Sign in</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0" aria-expanded="false">
+                                <ul id="top_menu" class="nav navbar-nav flex-grow-1">
+                                    <li class="nav-item">
+                                        <a role="menuitem" href="/" class="nav-link ">
+                                            <span>free valuation</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                              free agency
+                                            </button>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Macnash SUD</a>
+                                              <a class="dropdown-item" href="#">Macnash BRABANT</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a role="menuitem" href="/" class="nav-link ">
+                                            <span>new project</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a role="menuitem" href="/contactus" class="nav-link ">
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ml-lg-auto o_no_autohide_item">
+                                        <a href="/web/login" class="nav-link font-weight-bold">Sign in</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </nav>
+            </header>
+        </xpath>
+    </template>
+
+
+    <!-- <template id="template_header_default_mac" inherit_id="website.layout" name="Template Header Default MAC" active="True">
+        <xpath expr="//header//nav" position="replace">
+            <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+                <div id="top_menu_container" class="container justify-content-start justify-content-lg-between">
+                    <a href="/" class="navbar-brand logo mr-4">
+                        <span role="img" aria-label="Logo of My Website" title="My Website">
+                            <img src="/mac_website/static/src/img/logo.png" class="img img-fluid" alt="My Website" loading="lazy" />
+                        </span>
+                    </a> -->
+    <!-- btn appelé  -->
+    <!-- <t t-call="website.navbar_toggler">
+                        <t t-set="_toggler_class" t-value="'ml-auto'" />
+                    </t>
+                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0" aria-expanded="false"> -->
+    <!-- div strucutre appelé (ul#top_menu) -->
+    <!-- <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-value="'flex-grow-1'" />
+
+                            <li class="nav-item">
+                                <a role="menuitem" href="/" class="nav-link ">
+                                    <span>Ayhan</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="menuitem" href="/contactus" class="nav-link ">
+                                    <span>Contact us</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ml-lg-auto o_no_autohide_item">
+                                <a href="/web/login" class="nav-link font-weight-bold">Sign in</a>
+                            </li>
+
+                        </t>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template> -->
+
+    <!-- Footer website template -->
+    <template id="macnash_template_footer" inherit_id="website.layout" name="MACNASH Footer">
+        <xpath expr="//footer[@id='bottom']" position="replace">
+            <footer id="footer">
+                <div class="footer-top container">
+                    <div class="row">
+                        <div class="col-4">
+                            <h3>Macnash Assocciates</h3>
+                            <p class="m-0">Macnash Associates was founded on 1st July 1999 with its first Real Estate Business Centre in Uccle (Brussels).</p>
+                            <p>On 1st November 2008, Macnash Real Estate Franchise was created to franchise the existing Estate Agent branches.</p>
+                            <a class="text-white" href="">Read more</a>
+                        </div>
+                        <div class="col-4">
+                            <h3>You Know that ?</h3>
+                            <ul>
+                                <li class="mb-3">Experience "the good life" in Rhode-Saint-Genèse</li>
+                                <li class="mb-3">Saint-Gilles, an up-and-coming area</li>
+                                <li class="mb-3">Montgomery, the gateway to the European Quarter !</li>
+                                <li class="mb-3">Chatelain Quarter : The place to be</li>
+                                <li class="mb-3">A serene and modern lifestyle in brussels East</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h3>Useful Link</h3>
+                            <ul>
+                                <li class="mb-3">Free Valuation</li>
+                                <li class="mb-3">News</li>
+                                <li class="mb-4">Contact</li>
+                                <div class="social">
+                                    <a href="" target="_blank" class="mr-4">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 text-white">
+                                <p>History Legal Information Jobs</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end">
+                                    Copyright 2022 - Macnash Associates - All rights reserved -
+                                    <span class="font-weight-bold">by kweetix</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+
+</odoo>

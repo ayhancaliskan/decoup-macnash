@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#carouselSlides{
+    .carousel-item{
+        position: relative;
+        img{
+            object-fit: contain;
+        }
+        .text-banner {
+            position: absolute;
+            bottom: 0;right: 35%;
+            color: #FFFFFF;
+        }
+    }
+}

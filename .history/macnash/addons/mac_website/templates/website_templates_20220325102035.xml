@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!-- header website template -->
+    <!-- <template id="macnash_template_header" inherit_id="website.layout" name="Macnsash header">
+        <xpath expr="//header[@id='top']" position="replace">
+            <header>
+                test
+            </header>
+        </xpath>
+    </template> -->
+    <template id="template_header_default_mac" inherit_id="website.layout" name="Template Header Default" active="True">
+        <xpath expr="//header//nav" position="replace">
+            tst
+        </xpath>
+    </template>
+
+    <!-- Footer website template -->
+    <template id="macnash_template_footer" inherit_id="website.layout" name="MACNASH Footer">
+        <xpath expr="//footer[@id='bottom']" position="replace">
+            <footer id="footer">
+                <div class="footer-top container">
+                    <div class="row">
+                        <div class="col-4">
+                            <h3>Macnash Assocciates</h3>
+                            <p class="m-0">Macnash Associates was founded on 1st July 1999 with its first Real Estate Business Centre in Uccle (Brussels).</p>
+                            <p>On 1st November 2008, Macnash Real Estate Franchise was created to franchise the existing Estate Agent branches.</p>
+                            <a class="text-white" href="">Read more</a>
+                        </div>
+                        <div class="col-4">
+                            <h3>You Know that ?</h3>
+                            <ul>
+                                <li class="mb-3">Experience "the good life" in Rhode-Saint-Genèse</li>
+                                <li class="mb-3">Saint-Gilles, an up-and-coming area</li>
+                                <li class="mb-3">Montgomery, the gateway to the European Quarter !</li>
+                                <li class="mb-3">Chatelain Quarter : The place to be</li>
+                                <li class="mb-3">A serene and modern lifestyle in brussels East</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h3>Useful Link</h3>
+                            <ul>
+                                <li class="mb-3">Free Valuation</li>
+                                <li class="mb-3">News</li>
+                                <li class="mb-4">Contact</li>
+                                <div class="social">
+                                    <a href="" target="_blank" class="mr-4">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 text-white">
+                                <p>History Legal Information Jobs</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end">
+                                    Copyright 2022 - Macnash Associates - All rights reserved -
+                                    <span class="font-weight-bold">by kweetix</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+
+</odoo>

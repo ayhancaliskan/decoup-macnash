@@ -1,0 +1,98 @@
+<odoo>
+
+   <!-- <template id="edi_template_header" priority="100" inherit_id="website.template_header_default" name="EDI Website Header">
+        <xpath expr="//nav[@data-name='Navbar']" position="attributes">
+            <attribute name="class">navbar navbar-expand-xl navbar-light o_colored_level o_cc shadow-sm"</attribute>
+        </xpath> -->
+        <!-- <xpath expr="//div[@id='top_menu_collapse']" position="attributes">
+            <attribute name="t-if" >not without_navbar</attribute>
+        </xpath> -->
+        <!-- <xpath expr="//div[@id='top_menu_collapse']" position="after">
+            <div id="top_menu_infos">
+                <ul class="nav navbar-infos ml-auto text-lg-right">
+                    <li class="nav-item d-none d-md-block d-lg-block mx-auto li-call-us">
+                        <a class="mr-3 text-center link-no-underline" target="_blank" t-attf-href="https://edi.evc-net.com/?lang=#{lang.replace('_','-')}">
+                            <i class="fa fa-user-circle fa-2x" />
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block d-lg-block mx-auto li-call-us">
+                        <a class="btn btn-call-us text-center pt-1 " t-att-href="'tel:'+res_company.phone">
+                            <span class="d-none d-md-inline">Bel ons </span>
+                            <span class="d-md-none">
+                                <i class="fa fa-phone" />
+                            </span>
+                            <t t-esc="res_company.phone"/>
+                        </a>
+                    </li>
+                    <li class="nav-item list-inline-item mx-auto d-none d-md-block d-lg-block li-lang">
+                        <div class="dropdown lang-item">
+                            <button class="btn dropdown-toggle text-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span t-esc="lang.split('_')[0]"/>
+                                <span class="caret ml4"/>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <t t-foreach="languages" t-as="lg" t-if="not lg[0].split('_')[0] == 'en'">
+                                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])" class="dropdown-item js_change_lang" t-att-data-url_code="lg[1]">
+                                        <t t-esc="lg[0].split('_')[0]"/>
+                                    </a>
+                                </t>
+                                <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+                                <a groups="website.group_website_publisher" class="pl-4 pt-2 d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                                    <i class="fa fa-plus-circle"/>
+                                    Add a language...
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </xpath>
+        <xpath expr="//t[@t-call='website.placeholder_header_brand']" position="after">
+            <div class="ml-auto pt-2 d-md-none d-lg-none d-block top-menu-btn">
+                <a class="mr-3 text-center link-no-underline pull-left" target="_blank" t-attf-href="https://edi.evc-net.com/?lang=#{lang.replace('_','-')}">
+                    <i class="fa fa-user-circle fa-2x" />
+                </a>
+                <a class="btn btn-call-us pt-1 mx-auto pull-left" t-att-href="'tel:'+res_company.phone">
+                    <span class="d-none d-md-inline">Bel ons </span>
+                    <span class="d-md-none">
+                        <i class="fa fa-phone" />
+                    </span>
+                    <t t-esc="res_company.phone"/>
+                </a>
+                <div class="dropdown lang-item ml4  pull-right">
+                    <button class="btn dropdown-toggle text-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span t-esc="lang.split('_')[0]"/><span class="caret ml4"/>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                        <t t-foreach="languages" t-as="lg" t-if="not lg[0].split('_')[0] == 'en'">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])" class="dropdown-item js_change_lang" t-att-data-url_code="lg[1]">
+                                <t t-esc="lg[0].split('_')[0]"/>
+                            </a>
+                        </t>
+                        <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+                        <a groups="website.group_website_publisher" class="pl-4 pt-2 d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
+                                Add a language...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='oe_structure_header_default_1']" position="replace" /> -->
+    <!-- </template> -->
+
+    <template id="macnash_template_footer" inherit_id="website.layout" name="MACNASH Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+               <footer class="body__footer section">
+                    sectio
+                </footer>
+            </div>
+            <!-- <a href="#top" class="backToTop visible">
+                <img src="/edi_website/static/src/img/edi_back_to_top.png"/>
+            </a> -->
+        </xpath>
+
+    </template>
+
+</odoo>

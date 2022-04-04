@@ -1,0 +1,8 @@
+<odoo>
+    <template id="free_valuation_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <<h1>test</h1>>
+        </t>
+    </template>
+
+</odoo>

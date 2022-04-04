@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Update default website -->
+    <record id="website.default_website" model="website">
+        <field name="name">Macnash</field>
+        <field name="logo" type="base64" file="mac_website/static/src/img/logo.png"/>
+        <field name="favicon" type="base64" file="mac_website/static/src/img/favicon.png"/>
+    </record>
+
+
+    <template id="website_home_page_macnash" name="Accueil">
+        <t t-call="website.layout">
+                 <div class="container">
+                      <div class="row content">
+                        <div class="carousel-content col-lg-9">
+                          <div class="s_title pb8" data-name="Title" data-snippet="s_title">
+                            <h2 class="s_title_default">
+                              <font style="font-size: 62px;"/>
+                            </h2>
+                            <h2 class="s_title_default" style="text-align: left;">
+                              <font color="#ffffff">EDI</font>
+                            </h2>
+                            <h2 class="s_title_default" style="text-align: left;"><font color="#ffffff">Elektrisch rijden, o zo makkelijk</font>&amp;nbsp;&amp;nbsp;<br/></h2>
+                          </div>
+                          <div class="s_btn text-left pt16 pb16" data-name="Buttons" data-snippet="s_btn">
+                            <a href="/homecheck" class="focus-visible btn btn-beta rounded-circle btn-lg" data-original-title="" title="" aria-describedby="tooltip596004" data-tracking-event="button-click" data-tracking-info="{&quot;buttonType&quot;:&quot;button-cta&quot;,&quot;buttonName&quot;:&quot;to-request-offer&quot;,&quot;buttonText&quot;:&quot;Vraag een offerte&quot;,&quot;buttonPosition&quot;:&quot;&quot;,&quot;buttonCategory&quot;:&quot;inbound-link&quot;,&quot;buttonTarget&quot;:&quot;/homecheck&quot;}" data-tracking-qa-dtm="2xQCEi6C">Vraag een offerte</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </t>
+    </template>
+</odoo>

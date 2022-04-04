@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website_home_page_macnash" inherit_id="website.layout">
+          <t t-call="website.layout">
+        </t>
+        <div> Hello TEST </div>
+    </template>
+</odoo>

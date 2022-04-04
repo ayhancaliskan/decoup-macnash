@@ -1,0 +1,36 @@
+nav{
+    background-color: #424554;
+    .container-fluid{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    #top_menu{
+        color: #fff !important;
+        font-size: 18px;
+        text-transform:uppercase;
+        transition: .3s;
+        padding: 10px 15px;
+        a:hover{
+            color: #3ea832;
+            text-decoration: none;
+        }
+    }
+    .btn-group{
+        button{
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            text-transform:uppercase;
+            transition: .3s;
+            padding: 10px 15px;
+        }
+        button:hover {color: #3ea832}
+        button:focus {outline:0;}
+        button:active {color: #3ea832}
+        a{
+            font-size: 15px;
+        }
+
+    }
+}

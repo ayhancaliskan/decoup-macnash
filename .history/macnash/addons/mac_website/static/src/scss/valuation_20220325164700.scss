@@ -1,0 +1,33 @@
+.section-valuation{
+    h1{
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    label{
+        font-weight: bold;
+    }
+    .content{
+        background-color: white;
+        border-bottom: solid 2px #b8bbcb;
+        padding:30px;
+        p:first-child{
+            margin-bottom: 0;
+        }
+    }
+    .request{
+        a[target="_blank"]{
+            color: #3EA832;
+            font-weight:300;
+        }
+        a/:last-of-type{
+            background-color: #3EA832;
+        }
+    }
+
+}

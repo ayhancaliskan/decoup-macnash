@@ -1,0 +1,96 @@
+<odoo>
+    <template id="free_valuation_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <!-- <t t-call="mac_website.section-banner"/> -->
+            <div class="section-valuation container mb-5">
+                <h1>How much id your property worth?</h1>
+                <div class="content">
+                    <div class="row">
+                        <p class="m-O">
+                            <strong>Would you like a Sale or Rental valuation of your property?</strong>
+                        </p>
+                        <p>One of our representatives will value your property free-of-charge, taking into account the following criteria :</p>
+                        <ul>
+                            <li>The location and surroundings</li>
+                            <li>Precise measurements to determine the exact floor area</li>
+                            <li>Quality of materials used and finish</li>
+                            <li>Comparison with sales completed in the area</li>
+                            <li>A study of the financial data (profitability, feasibility, charges etc.)</li>
+                            <li>Please contact us using the form below, and we’ll reply within 24 hours.</li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <h2>Your details</h2>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-4 col-md-2">
+                                <div id="contentHolder_contactForm_titleListGroup" class="form-group">
+                                    <label>Title</label>
+                                    <select name="ctl00$contentHolder$contactForm$titleList" id="contentHolder_contactForm_titleList" class="form-control">
+                                        <option selected="selected" value="1">Sir</option>
+                                        <option value="2">Madam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-3">
+                                <div id="contentHolder_contactForm_firstNameGroup" class="form-group">
+                                    <label>First name *</label>
+                                    <input name="ctl00$contentHolder$contactForm$firstName" type="text" id="contentHolder_contactForm_firstName" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="contentHolder_contactForm_lastNameGroup" class="form-group">
+                                    <label>Last name *</label>
+                                    <input name="ctl00$contentHolder$contactForm$lastName" type="text" id="contentHolder_contactForm_lastName" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="contentHolder_contactForm_phoneGroup" class="form-group">
+                                    <label>Phone *</label>
+                                    <input name="ctl00$contentHolder$contactForm$phone" type="text" id="contentHolder_contactForm_phone" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="contentHolder_contactForm_emailGroup" class="form-group">
+                                    <label>E-mail *</label>
+                                    <input name="ctl00$contentHolder$contactForm$email" type="text" id="contentHolder_contactForm_email" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div id="contentHolder_contactForm_streetGroup" class="form-group">
+                                    <label>Street</label>
+                                    <input name="ctl00$contentHolder$contactForm$street" type="text" id="contentHolder_contactForm_street" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div id="contentHolder_contactForm_streetNumberGroup" class="form-group">
+                                    <label>Nr / Box</label>
+                                    <input name="ctl00$contentHolder$contactForm$streetNumber" type="text" id="contentHolder_contactForm_streetNumber" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="contentHolder_contactForm_zipCodeGroup" class="form-group">
+                                    <label>Zip code</label>
+                                    <input name="ctl00$contentHolder$contactForm$zipCode" type="text" id="contentHolder_contactForm_zipCode" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="contentHolder_contactForm_cityGroup" class="form-group">
+                                    <label>City</label>
+                                    <input name="ctl00$contentHolder$contactForm$city" type="text" id="contentHolder_contactForm_city" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

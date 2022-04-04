@@ -1,0 +1,195 @@
+<odoo>
+    <template id="free_valuation_macnash" name="Accueil">
+        <t t-call="website.layout">
+            <!-- <t t-call="mac_website.section-banner"/> -->
+            <div class="section-valuation container mb-5">
+                <h1>How much id your property worth?</h1>
+                <div class="content">
+                    <div class="row">
+                        <p class="m-O">
+                            <strong>Would you like a Sale or Rental valuation of your property?</strong>
+                        </p>
+                        <p>One of our representatives will value your property free-of-charge, taking into account the following criteria :</p>
+                        <ul>
+                            <li>The location and surroundings</li>
+                            <li>Precise measurements to determine the exact floor area</li>
+                            <li>Quality of materials used and finish</li>
+                            <li>Comparison with sales completed in the area</li>
+                            <li>A study of the financial data (profitability, feasibility, charges etc.)</li>
+                            <li>Please contact us using the form below, and we’ll reply within 24 hours.</li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <h2>Your details</h2>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-4 col-md-2">
+                                <div id="status" class="form-group">
+                                    <label>Title</label>
+                                    <select name="status" id="status" class="form-control">
+                                        <option selected="selected" value="1">Sir</option>
+                                        <option value="2">Madam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-3">
+                                <div id="firstname" class="form-group">
+                                    <label>First name *</label>
+                                    <input name="firstname" type="text" id="firstName" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="lastName" class="form-group">
+                                    <label>Last name *</label>
+                                    <input name="lastName" type="text" id="lastName" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="phone" class="form-group">
+                                    <label>Phone *</label>
+                                    <input name="phone" type="text" id="phone" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="email" class="form-group">
+                                    <label>E-mail *</label>
+                                    <input name="email" type="text" id="email" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div id="street" class="form-group">
+                                    <label>Street</label>
+                                    <input name="street" type="text" id="street" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div id="NumberGroup" class="form-group">
+                                    <label>Nr / Box</label>
+                                    <input name="streetNumber" type="text" id="streetNumber" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="zipCodeGroup" class="form-group">
+                                    <label>Zip code</label>
+                                    <input name="Form_zipCode" type="text" id="Form_zipCode" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="Form_cityGroup" class="form-group">
+                                    <label>City</label>
+                                    <input name="Form_city" type="text" id="Form_city" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <h2>Your request</h2>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="propertyTypeListGroup" class="form-group">
+
+                                    <label>Property type *</label>
+                                    <select name="propertyTypeList" id="propertyTypeList" class="form-control">
+                                        <option value=""></option>
+                                        <option value="1">Flat</option>
+                                        <option value="3">House</option>
+                                        <option value="4">Office</option>
+                                        <option value="5">Industrial</option>
+                                        <option value="6">Garage / parking</option>
+                                        <option value="7">Plot</option>
+                                        <option value="2">Commercial</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div id="contentHolder_contactForm_transactionTypeListGroup" class="form-group">
+                                    <select name="ctl00$contentHolder$contactForm$transactionTypeList" onchange="javascript:setTimeout('__doPostBack(\'ctl00$contentHolder$contactForm$transactionTypeList\',\'\')', 0)" id="contentHolder_contactForm_transactionTypeList" class="form-control">
+                                        <option selected="selected" value=""></option>
+                                        <option value="0">for sale</option>
+                                        <option value="1">for rent</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="contentHolder_contactForm_officeListGroup" class="form-group">
+
+                                    <label>Contact agency *</label>
+                                    <select name="ctl00$contentHolder$contactForm$officeList" id="contentHolder_contactForm_officeList" class="form-control">
+                                        <option value="3296">Macnash</option>
+                                        <option value="1749">Macnash SUD</option>
+                                        <option value="1753">Macnash MONTGOMERY</option>
+                                        <option value="1755">Macnash BRABANT</option>
+                                        <option value="4538">Macnash NORTH</option>
+                                        <option value="6201">Macnash LEMBEEK</option>
+                                        <option value="SYNDIC">Macnash SYNDIC</option>
+                                        <option value="GESTION">Macnash GESTION</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div id="contentHolder_contactForm_subjectListGroup" class="form-group">
+
+                                    <label>Subject *</label>
+                                    <select name="ctl00$contentHolder$contactForm$subjectList" id="contentHolder_contactForm_subjectList" disabled="disabled" class="aspNetDisabled form-control">
+                                        <option value="0">Information request</option>
+                                        <option value="1">Visit request</option>
+                                        <option selected="selected" value="2">Rating request</option>
+                                        <option value="3">Your property on sale</option>
+                                        <option value="4">Renting out your property</option>
+                                        <option value="5">Other</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="contentHolder_contactForm_messageGroup" class="form-group">
+
+                                    <label>Message</label>
+                                    <textarea name="ctl00$contentHolder$contactForm$message" rows="5" cols="20" id="contentHolder_contactForm_message" class="form-control" maxlength="1000"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    (*) Required Field
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="checkbox-container">
+                                    I have read and I agree the
+                                    <a href="/en/legal-information.aspx" target="_blank">privacy policy</a>
+                                    including my right to access my data, to have them rectified, to have them deleted and to put an end to the processing of my data.
+                                    <input id="contentHolder_contactForm_privacy" type="checkbox" name="ctl00$contentHolder$contactForm$privacy"/>
+                                        <span class="checkmark"></span>
+                                </label>
+                                <div class="form-group">
+                                    <a onclick="return DisableButton();" id="contentHolder_contactForm_sendButton" class="btn btn-primary" href="javascript:__doPostBack('ctl00$contentHolder$contactForm$sendButton','')">Send</a>
+                                    <a id="contentHolder_contactForm_disabledSendButton" class="aspNetDisabled btn btn-primary disabled" style="display:none">Send</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>
